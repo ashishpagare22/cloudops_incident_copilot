@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: checkout-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: checkout-api
+  template:
+    metadata:
+      labels:
+        app: checkout-api
+    spec:
+      containers:
+        - name: checkout-api
+          image: ghcr.io/acme/checkout-api:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: DATABASE_PASSWORD
+              value: super-secret

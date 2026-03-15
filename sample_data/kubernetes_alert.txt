@@ -1,0 +1,5 @@
+Environment: production
+Service: checkout-api
+Alert: HTTP 5xx error rate is above 18% for the last 8 minutes after the latest deployment.
+Namespace: prod-checkout
+Impact: checkout requests are failing for customer traffic.

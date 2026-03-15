@@ -1,0 +1,1 @@
+Registry credentials were rotated yesterday and the deployment role trust policy was tightened during the same change window.

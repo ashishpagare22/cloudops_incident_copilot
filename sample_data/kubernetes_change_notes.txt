@@ -1,0 +1,1 @@
+Rolled out checkout-api with a floating `latest` tag 20 minutes ago and removed the old init sequence that injected runtime configuration.

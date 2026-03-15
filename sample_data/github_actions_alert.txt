@@ -1,0 +1,3 @@
+Environment: production
+Pipeline: deploy-checkout
+Alert: Release workflow failed during the publish-and-deploy stage for the main branch.

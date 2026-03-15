@@ -1,0 +1,7 @@
+Warning  BackOff             3m10s             kubelet  Back-off restarting failed container checkout-api in pod checkout-api-5db9c8db5f-6g8sz
+Last State:     Terminated
+Reason:         Error
+Exit Code:      137
+Liveness probe failed: Get "http://10.42.1.19:8080/health": dial tcp 10.42.1.19:8080: connect: connection refused
+Readiness probe failed: HTTP probe failed with statuscode: 500
+Application boot error: failed to load DATABASE_URL from runtime config
