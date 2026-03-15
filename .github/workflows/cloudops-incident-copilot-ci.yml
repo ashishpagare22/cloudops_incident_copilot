@@ -2,21 +2,11 @@ name: cloudops-incident-copilot-ci
 
 on:
   push:
-    paths:
-      - "cloudops_incident_copilot/**"
-      - ".github/workflows/cloudops-incident-copilot-ci.yml"
   pull_request:
-    paths:
-      - "cloudops_incident_copilot/**"
-      - ".github/workflows/cloudops-incident-copilot-ci.yml"
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: cloudops_incident_copilot
 
     steps:
       - name: Check out repository
